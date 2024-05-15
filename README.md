@@ -1,1 +1,1 @@
-# Aprendendo-DOM
+# Aprendendo-DOM (JavaScript)
