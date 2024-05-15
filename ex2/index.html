@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Leitor de Informações</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+</head>
+
+<body>
+    <div class="bloco-info">
+        <form class="form-info">
+            <h1>Leitor de Informações</h1>
+            <div class="item-form-info">
+                <label>Nome:</label>
+                <input id="infoNome" placeholder="Digite seu nome" oninput="validarLetras(this)" />
+            </div>
+            <div class="item-form-info">
+                <label>Sobrenome:</label>
+                <input id="infoSobrenome" placeholder="Digite seu sobrenome" oninput="validarLetras(this)" />
+            </div>
+            <div class="item-form-info">
+                <label>CPF:</label>
+                <input id="InfoCPF" placeholder="Digite seu CPF" />
+            </div>
+            <div class="item-form-info">
+                <label>Sexo:</label>
+                <select id="infoSexo">
+                    <option value="" selected disabled>Escolha uma opção</option>
+                    <option value="masculino">Masculino</option>
+                    <option value="feminino">Feminino</option>
+                    <option value="outro">Outro</option>
+                </select>
+            </div>
+            <div class="item-form-info">
+                <label>Data de nascimento:</label>
+                <input type="date" id="infoDataNasc" placeholder="Escolha sua data de nascimento" />
+            </div>
+            <div class="item-form-info">
+                <label for="infoCep">CEP:</label>
+                <input id="infoCep" placeholder="Digite seu CEP" />
+            </div>
+            <div class="item-form-info-endereco">
+                <label for="infoRua">Rua:</label>
+                <input id="infoRua" oninput="validarLetras(this)"/>
+            </div>
+            <div class="item-form-info-endereco">
+                <label for="infoBairro">Bairro:</label>
+                <input id="infoBairro" oninput="validarLetras(this)"/>
+            </div>
+            <div class="item-form-info-endereco">
+                <label for="infoCidade">Cidade:</label>
+                <input id="infoCidade" oninput="validarLetras(this)"/>
+            </div>
+            <div class="item-form-info-endereco">
+                <label for="infoEstado">Estado (sigla):</label>
+                <input id="infoEstado" oninput="validarLetras(this)"/>
+            </div>
+            <div class="item-form-info-endereco">
+                <label for="infoPais">País:</label>
+                <input id="infoPais" value="Brasil" oninput="validarLetras(this)" />
+            </div>
+            <div class="item-form-info">
+                <label>Telefone:</label>
+                <input id="infoTel" placeholder="Digite seu telefone" />
+            </div>
+            <button type="button" onclick="salvarInfos()">Salvar</button>
+        </form>
+        
+        <div id="resultado" style="display:none"></div>
+        <div id="alerta" style="display:none"></div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

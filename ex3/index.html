@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Verificador de Aprovação</title>
+</head>
+
+<body>
+    <div class="bloco-info">
+        <form class="form-info">
+            <h1>Verificador de Aprovação</h1>
+            <div class="item-form-info">
+                <label>Nome:</label>
+                <input id="alunoNome" placeholder="Digite seu nome" oninput="validarLetras(this)" />
+            </div>
+            <div class="item-form-info">
+                <label>Matrícula:</label>
+                <input id="alunoMatricula" placeholder="Digite sua matrícula"/>
+            </div>
+            <div class="item-form-info">
+                <label>Disciplina:</label>
+                <input id="alunoDisciplina" placeholder="Digite sua disciplina"/>
+            </div>
+            <div class="item-form-info">
+                <label>Nota:</label>
+                <input id="alunoNota" placeholder="Digite sua nota" oninput="validarNota(this)" />
+            </div>
+            
+            <button type="button" onclick="verificarNota()">Verificar</button>
+        </form>
+        
+        <div id="resultado" style="display:none"></div>
+        <div id="alerta" style="display:none"></div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

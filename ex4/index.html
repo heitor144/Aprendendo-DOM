@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Calculadora de fatorial</title>
+</head>
+
+<body>
+    <div class="bloco-info">
+        <form class="form-info">
+            <h1>Calculadora de fatorial</h1>
+            <div class="item-form-info">
+                <label>Digite um número inteiro:</label>
+                <input id="numInt" placeholder="Digite um valor" />
+            </div>
+            
+            <button type="button" onclick="calculaFatorial()">Calcular</button>
+        </form>
+        
+        <div id="resultado" style="display:none"></div>
+        <div id="alerta" style="display:none"></div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

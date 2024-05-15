@@ -1,0 +1,130 @@
+body {
+    font-family: "Arial";
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+}
+
+.bloco-info {
+    width: 600px;
+    text-align: center;
+}
+
+form {
+    text-align: center;
+    margin-top: 50px;
+    padding: 50px;
+    background-color: #228434;
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 40px;
+}
+
+.item-form-info {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.item-form-info-endereco {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+label {
+    margin: 10px 0;
+    padding: 0;
+    display: flex;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: left;
+
+}
+
+input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+}
+select {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #00b725;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover,
+button:active {
+    background-color: #a3ea40;
+    border-radius: 5px;
+}
+
+#resultado {
+    margin: 20px 0 0 0;
+    padding: 10px;
+    width: calc(100% - 20px);
+    font-size: 18px;
+    font-weight: bold;
+    color: #3acd00;
+    background-color: #a0fac4;
+    border-radius: 5px;
+}
+
+#alerta {
+    margin: 20px 0 0 0;
+    padding: 10px;
+    width: calc(100% - 20px);
+    font-size: 18px;
+    font-weight: bold;
+    color: #b61010;
+    background-color: #f8d0d0;
+    border-radius: 5px;
+}
+
+.div_resultado {
+    margin-top: 20px;
+    padding: 10px;
+    width: calc(100% - 20px);
+    font-size: 18px;
+    font-weight: bold;
+    color: #e5f835;
+    background-color: #b3fee1;
+    border-radius: 5px;
+}
+
+.div_alerta {
+    margin-top: 20px;
+    padding: 10px;
+    width: calc(100% - 20px);
+    font-size: 18px;
+    font-weight: bold;
+    color: #b61010;
+    background-color: #f8d0d0;
+    border-radius: 5px;
+}
